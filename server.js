@@ -2,34 +2,23 @@
 const express = require('express')
 const app = express();
 
-// import file system and file paths
-const fs = require('fs');
-const path = require('path');
-
 // mounting Middleware before any get(), use(), or post() methods
-app.use(express.json());
-app.use(express.urlencoded({ extended: true }));
+app.use(express.json()); // parse into JSON format
+app.use(express.urlencoded({ extended: true })); // parse URL encoded data
+
+// serve static 'public' folder
 app.use(express.static('public'));
 
-// snag the two HTML files were working with
-app.use(require('./Develop/public/index.html'));
-app.use(require('./Develop/public/notes.html'));
-
 // create variables for the routes were working with
-const apiRoutes = require('routes/apiRoutes.js');
-const htmlRoutes = require('routes/htmlRoutes.js');
+const apiRoutes = require('./routes/apiRoutes');
+const htmlRoutes = require('./routes/htmlRoutes');
 
-// grab our routes files
-app.get('/', apiRoutes);
-app.get('/', htmlRoutes);
+// mount our routes files
+app.use('/api', apiRoutes);
+app.use('/', htmlRoutes);
 
-// for deploying on Heroku
-const PORT = process.env.PORT || 3001;
+// assign port
+const PORT = process.env.PORT || 3001; // process.env.port for deploying on Heroku
 
 // a message to show it has worked successfully
-app.listen(PORT, () => console.log(`Express server is cookin it up at: http://localhost:${PORT} 🚀`));
-
-// for connecting our html files
-// app.get('/', (req, res) =>
-//     res.sendFile(path.join(__dirname, '/public/index.html'))
-// );
+app.listen(PORT, () => console.log(`Express is servin' it up at Port ${PORT} 🚀`));
