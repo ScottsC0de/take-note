@@ -24,9 +24,9 @@ app.post('/notes', (req, res) => {
 });
 
 // delete() method
-app.delete('public/notes/id', (req, res) => {
-    // deleteNote()
-    // console.log("Your note has been deleted!")
-});
+// app.delete('public/notes/id', (req, res) => {
+//     // data.splice(req.body);
+//     // console.log("Your note has been deleted!")
+// });
 
 module.exports = app;
