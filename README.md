@@ -30,8 +30,8 @@ To use this app, click the link in the above "Installation" section. You will be
 
 ## <a id="screenshots-id"></a>Screenshots
 
-![alt text](img/take-note-pic1.png)
-![alt text](img/take-note-pic2.png)
+![alt text](public/assets/img/take-note-pic1.png)
+![alt text](public/assets/img/take-note-pic2.png)
     
 ## <a id="tests-id"></a>Tests
 This application was tested using Insomnia, a client that allows you to make get(), post(), and delete() requests to ensure functionality. You can download Insomnia and give it a try here: https://insomnia.rest 
