@@ -24,7 +24,7 @@ app.post('/notes', (req, res) => {
         err ? console.log(err) : console.log("Your note has been saved!"));
 });
 
-// delete() method
+// delete() method attempt
 // app.delete('/notes/:id', (req, res) => {
 //     const noteId = req.params.id;
 //     const filteredNoteArray = data.filter((note) => {
