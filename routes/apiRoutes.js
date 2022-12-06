@@ -25,14 +25,14 @@ app.post('/notes', (req, res) => {
 });
 
 // delete() method
-app.delete('/notes/:id', (req, res) => {
-    const noteId = req.params.id;
-    const filteredNoteArray = data.filter((note) => {
-        return note.id !== noteId;
-    });
-    fs.writeFileSync(path.join(__dirname, '../db/db.json'), JSON.stringify(filteredNoteArray))
-    console.log("Your note was deleted!")
-    res.sendStatus(200);
-});
+// app.delete('/notes/:id', (req, res) => {
+//     const noteId = req.params.id;
+//     const filteredNoteArray = data.filter((note) => {
+//         return note.id !== noteId;
+//     });
+//     fs.writeFileSync(path.join(__dirname, '../db/db.json'), JSON.stringify(filteredNoteArray))
+//     console.log("Your note was deleted!")
+//     res.sendStatus(200);
+// });
 
 module.exports = app;
