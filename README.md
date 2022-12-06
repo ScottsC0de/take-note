@@ -29,6 +29,9 @@ There is no installation requirement for this application. Just click the link h
 To use this app, click the link in the above "Installation" section. You will be directed to a homepage with a button that says "Get Started". This will redirect you to the application. Click the "Note Title" or "note text" placeholders to fill in your note. Then, hit the save icon at the top right-hand corner of the page. This will save your note to a list on the left-hand side of the page and will stay there until you click the trash can icon next to the note to delete it.
 
 ## <a id="screenshots-id"></a>Screenshots
+
+![alt text](img/take-note-pic1.png)
+![alt text](img/take-note-pic2.png)
     
 ## <a id="tests-id"></a>Tests
 This application was tested using Insomnia, a client that allows you to make get(), post(), and delete() requests to ensure functionality. You can download Insomnia and give it a try here: https://insomnia.rest 
