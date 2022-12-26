@@ -3,13 +3,6 @@ A note taker app powered by Express.js and deployed using Heroku
 
 <img src="https://octodex.github.com/images/daftpunktocat-thomas.gif" alt="github mascot with daft punk helmet on" width="200"/>
 
-[//]: # (demonstrating some cool markdown syntax tricks. this is a markdown comment)
-
-This ReadMe file was generated using:
-- **Markdown**, a fun and easy-to-learn language that creates appealing ReadMe documents
-- **node.js**, a way to run server-side JavaScript functions
-> Who doesn't ~~like~~ _love_ a good ReadMe?&nbsp;
-
 ## 💡 Table of Contents
 
 - [Description](#description-id)
